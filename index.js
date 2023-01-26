@@ -64,20 +64,20 @@ highlightThumbnail()
 //     "./easyscape-test-photos/13.jpeg"
 // ]
 const plantImageUrls = [
-    "./easyscape-test-photos/test-portrait.jpg",
-    "./easyscape-test-photos/test-landscape.jpg",
-    "./easyscape-test-photos/main.jpeg",
-    "./easyscape-test-photos/1.jpeg",
-    "./easyscape-test-photos/2.jpeg",
-    "./easyscape-test-photos/3.jpeg",
-    "./easyscape-test-photos/4.jpeg",
-    "./easyscape-test-photos/7.jpeg",
-    "./easyscape-test-photos/8.jpeg",
-    "./easyscape-test-photos/9.jpeg",
-    "./easyscape-test-photos/10.jpeg",
-    "./easyscape-test-photos/11.jpeg",
-    "./easyscape-test-photos/12.jpeg",
-    "./easyscape-test-photos/13.jpeg"
+    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/test-portrait.jpg",
+    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/test-landscape.jpg",
+    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/main.jpeg",
+    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/1.jpeg",
+    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/2.jpeg",
+    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/3.jpeg",
+    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/4.jpeg",
+    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/7.jpeg",
+    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/8.jpeg",
+    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/9.jpeg",
+    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/10.jpeg",
+    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/11.jpeg",
+    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/12.jpeg",
+    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/13.jpeg"
 ]
 
 
