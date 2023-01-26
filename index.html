@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Easyscape Test</title>
+</head>
+<body>
+    <header>
+        <div id="user">
+            <img id='user-icon' src="./icons/user-icon.png" alt="User icon">
+            <p id='user-id'>Welcome dmuddx@gmail.com</p>
+        </div>
+        <div id="header">
+            <img id="header-logo" src="./icons/easyscape-earth-logo.png" alt="EasyScape Logo">
+            <nav>
+                <div id='design-garden-nav' class="nav-link">
+                    <img class='nav-logo' src="./icons/design-garden-logo.png" alt="Design Garden Icon">
+                    <h4 class="nav-tag">DESIGN GARDEN</h4>
+                </div>
+                <div id="browse-for-plants-nav" class="nav-link">
+                    <img class='nav-logo' src="./icons/browse-plants-icon.png" alt="Browse For Plants Icon">
+                    <h4 class="nav-tag">BROWSE FOR PLANTS</h4>
+                </div>
+                <div id="search-for-plants-nav" class="nav-link">
+                    <img class='nav-logo' src="./icons/nav-search-logo.png" alt="Search For Plants Icon">
+                    <h4 class="nav-tag">SEARCH FOR PLANTS</h4>
+                </div>
+            </nav>
+            <button id="sign-out">Sign Out</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="top-row-main">
+            <div id="selected-plant">
+                <h2 id="common-name">Western Juniper</h2>
+                <h2 id="scientific-name">(Juniper communis)</h2>
+                <img src="./icons/add-icon.png" class="icon" id='add-plant-icon' alt="Add Plant Icon">
+            </div>
+            <div id="toggle-category">
+                <h3>Trees</h3>
+                <img src="./icons/back.png" class="icon" alt="Previous Plant">
+                <img src="./icons/next.png" class="icon" alt="Next Plant">         
+            </div>
+        </div>
+        <div id="plant-and-map-container">
+            <div id="main-plant-image">
+                <img id='showcase-plant' src="./easyscape-test-photos/test-portrait.jpg" alt="">
+                <div id="scroll-showcase">
+                    <img id="scroll-showcase-forward" src="./icons/scroll-showcase-forward.png" alt="scroll forward">
+                    <img id="scroll-showcase-backward" src="./icons/scroll-showcase-backward.png" alt="scroll backward">
+                </div>
+                <div id="plant-copyright">
+                    <p>Dick Van Dyke</p>
+                    <p>CC BY-SA</p>
+                </div>
+            </div>
+            <div id="preview">
+                <div id="preview-images"> 
+                    <img class='plant-photo' src="./easyscape-test-photos/test-portrait.jpg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/test-landscape.jpg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/main.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/1.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/2.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/3.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/4.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/7.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/8.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/9.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/10.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/11.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/12.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/13.jpeg" alt="">
+                    <img src="./icons/scroll-forward.png" alt="scroll forward" id="scroll-forward" class="scroll"> 
+                    <img src="./icons/scroll-backward.png" alt="scroll backward" id="scroll-backward" class="scroll">
+                </div>      
+            </div>
+            <div id="map">
+                <img src="./easyscape-test-photos/map.jpeg" alt="">
+            </div>
+        </div>
+
+        <div id="plant-info">
+            <div id="summary" class="info-block bottom-border" >
+                <h4 class="info-header">Summary</h4>
+                <p>Juniperus communis, the common juniper, is a species of small tree or shrub in the cypress family Cupressaceae. An evergreen conifer, it has the largest
+                    geographical range of any woody plant, with a circumpolar distribution throughout the cool temperate Northern Hemisphere. Juniperus communis is very
+                    variable in form, ranging from 10 meters (33 ft)—rarely 16 m (52 ft)—tall to a low, often prostrate spreading shrub in exposed locations
+                </p>
+            </div>
+            <div id="plant-description" class="info-block bottom-border">
+                <h4 class="info-header">Plant Description</h4>
+                <ul id="plant-description-list">
+                    <li><span class="bold">Plant Type: </span>Tree</li>
+                    <li><span class="bold">Height: </span>33.0 ft (10.1 m)</li>
+                    <li><span class="bold">Width: </span>9.0 - 12.0 ft (2.7 - 3.7 m)</li>
+                    <li><span class="bold">Growth Rate: </span>Slow</li>
+                    <li><span class="bold">Flower Color: </span>Brown, Yellow, Green</li>
+                    <li><span class="bold">Flowering Season: </span>Spring</li>
+                    <li><span class="bold">Leaf Rentention: </span>Evergreen</li>
+                </ul>
+            </div>
+            <div id="growth-requirements" class="info-block bottom-border">
+                <h4 class="info-header">Growth Requirements</h4>
+                <ul id="growth-requirements-list">
+                    <li><span class="bold">Sun: </span>Full Sun, Part Shade</li>
+                    <li><span class="bold">Water: </span>Medium, High</li>
+                    <li><span class="bold">Drainage: </span>Fast, Medium</li>
+                </ul>
+            </div>
+            <div id="natural-habitat" class="info-block bottom-border">
+                <h4 class="info-header">Natural Habitat</h4>
+                <p>Gravel, rocky and sandy soils; dry and damp places; near beaches; on hills and bluffs; in pine forests.
+                </p>
+            </div>
+            <div id="other-names" class="info-block">
+                <h4 class="info-header">Other Names</h4>
+                <p><span class="bold">Common Names: </span>Scarlet Maple, Soft Maple, Swamp Maple, Rot-Ahorn, Rotahorn, Plaine, Plaine Rouge, Érable Rouge, Acero Rosso, ödlön</p>
+                <p><span class="bold">Scientific Names: </span>Acer rubrum, Acer rubrum f. rubrum, Acer rubrum var. tomentosum, Acer sanguineum, Acer rubrum f. breviramusculum, Acer
+                    rubrum var. pallidiflorum, Rufacer rubrum, Acer rubrum f. sanguineum, Acer rubrum f. tomentosum, Acer rubrum var. columnare</p>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+            <div id="plantlist-library">
+                <img class='footer-icon' src="./icons/plantlist-library.png" alt="Plantlist Library icon">
+                <p>Plantlist Library</p>
+            </div>
+        <div id="footer-option">
+            <p>About</p>
+            <p>Help</p>
+            <div id="tutorial-menu">
+                <img class='footer-icon' src="./icons/footer-tutorial.png" alt="Play tutorial icon">
+                <p>Tutorial</p>
+            </div>
+            <p>Privacy</p>
+            <p>Contact</p>
+            <p>Upgrade</p>
+        </div>
+            <p id="copyright">&copy 2019</p>
+    </footer>
+
+<script src="./index.js"></script>
+</body>
+</html>
