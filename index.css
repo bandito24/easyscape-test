@@ -162,6 +162,7 @@ nav{
     bottom: 3.5em;
     column-gap: 10px;
     row-gap: 10px;
+    margin: auto;
     /* padding-bottom: 75% */
 }
 
