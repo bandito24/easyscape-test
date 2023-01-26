@@ -1,0 +1,659 @@
+body{
+    font-family: 'open sans', sans-serif;
+    width: 95%;
+    margin: auto;
+}
+
+/* Header  */
+
+header{
+    border-bottom: solid 5px #A2CCFA;
+    padding-bottom: 20px;
+    height: 60px;
+}
+
+
+
+
+#user{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    position: absolute;
+    right: 45px;
+    top: 0px;
+    font-size: .75rem;
+}
+
+#user p{
+    position: relative;
+    top: 1px;
+    opacity: .6;
+}
+
+#user-icon{
+    position: relative;
+    top: 2px;
+    right: 4px;
+    width: 30px;
+    height: 30px;
+}
+
+
+#header-logo{
+    align-self: center;
+    position: absolute;
+    top: 10px;
+}
+
+.nav-link{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-size: 1rem;
+}
+
+nav{
+    margin: auto;
+    display: flex;
+    width: 50%;
+    position: relative;
+    top: .5em;
+
+}
+
+.nav-link:hover{
+    background-color: #EDF5FE;
+    transition: background-color ease-out 300ms;
+}
+
+.nav-logo{
+    align-self: center;
+    padding-right: 10px;
+}
+
+#header-logo{
+    width: 15em;
+}
+
+.nav-logo{
+    width: 30px;
+}
+
+
+#header button{
+    position: absolute;
+    right: 45px;
+    top: 45px;
+    background-color: #A2CCFA;
+    color: #56606b;
+    border-radius: 2px;
+    border: none;
+    padding: 4px 6px;
+    cursor: pointer;
+}
+
+#header button:hover{
+    text-decoration: underline;
+}
+
+#header .nav-tag{
+    align-self: center;
+    
+}
+
+.icon{
+    width: 30px;
+    align-self: center;
+    margin-left: .5em;
+    cursor: pointer;
+}
+
+.icon:hover{
+    transform: scale(1.3);
+    transition: transform 100ms linear;
+}
+
+
+/* Name of Plant Being Rendered */
+
+#selected-plant{
+    display: flex;
+}
+
+#selected-plant img{
+    width: 40px;
+}
+
+#scientific-name{
+    font-weight: 400;
+    margin-left: 1em;
+    
+}
+
+
+#toggle-category{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 4.4em;
+}
+
+
+#toggle-category h3{
+    text-decoration: underline;
+    color:#A2CCFA
+}
+
+/* Plant image, plant thumbnails, and map grid area */
+
+#plant-and-map-container{
+    display: grid;
+    grid-template-areas: "image map"
+                         "preview map";
+    grid-template-rows: minmax(50px, 525px) minmax(90px, 90px);
+    grid-template-columns: minmax(50px, 700px) minmax(50px, 1400px);
+    height: 615px;
+    position: relative;
+    bottom: 3.5em;
+    column-gap: 10px;
+    row-gap: 10px;
+    /* padding-bottom: 75% */
+}
+
+/* Showcase Image */
+
+
+#main-plant-image{
+    grid-area: image; 
+    display: flex; 
+    justify-content: center; 
+    width: auto;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    position: relative;
+    object-fit: contain;
+    overflow: auto;
+    border: 2px solid #A2CCFA;
+    border-radius: 5px;
+    animation: fadeIn 2s; 
+      
+}
+
+#main-plant-image img{
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+#plant-copyright{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    font-size: 12px;
+    background-color: rgba(128,128,128,.5);
+    width: 97.5%;
+    height: 30px;
+    padding-top: 0;
+}
+
+@keyframes fadeIn{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#plant-copyright p{
+    padding: 0 20px;
+    color: #e9e0c9;
+    position: relative;
+    bottom: 5px;
+}
+
+
+#scroll-showcase-forward{
+    position: absolute;
+    right: 5px;
+    width: 50px;
+    top: 14em;
+    cursor: pointer;
+}
+
+#scroll-showcase-backward{
+    position: absolute;
+    left: 5px;
+    top: 14em;
+    width: 50px;
+    cursor: pointer;
+}
+
+#scroll-showcase-forward:hover, #scroll-showcase-backward:hover{
+    transform: scale(1.3);
+    transition: transform 100ms linear;
+}
+
+
+
+/* Thumbnail Image Previews */
+
+#preview{
+    grid-area: preview;
+    position: relative;
+    
+}
+
+#preview-images{
+    overflow: scroll;
+    white-space: nowrap;
+    width: 93%;
+    height: 100%;
+    margin: auto;
+    overflow: auto;
+    border: 2px solid #A2CCFA;
+    border-radius: 5px;
+}
+
+#preview-images img{
+    height: 86px; 
+   max-width: 120px; 
+    overflow: auto;
+    /* object-fit: contain; */
+    box-sizing: border-box;
+    position: relative;
+    top: 2px;
+}
+
+
+preview-images .plant-photos{
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+#preview #scroll-backward{
+    position: absolute;
+    left: 0px;
+    width: 20px; 
+    object-fit: contain;
+}
+
+#preview #scroll-forward{
+    position: absolute;
+    right: 0px;
+    width: 20px; 
+    object-fit: contain;
+}
+
+
+.scroll:hover{
+    transform: scale(1.5);
+    transition: transform 200ms ease-in;
+}
+
+/* Map placeholder */
+
+
+#map{
+    grid-area: map;
+}
+
+#map img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+/* Plant info */
+
+
+#plant-info{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 4em;
+
+}
+
+#plant-info p{
+    line-height: 2;
+}
+
+#plant-info p, #plant-info li{
+    font-size: .80rem;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+#plant-description-list li + li::before{
+    content: "\2022";  
+    color: #A2CCFA; 
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    padding-right: 30px;
+    font-weight: bold; 
+    display: inline-block; 
+    padding-left: 20px;
+    
+}
+
+#plant-description-list li{
+    display: inline;
+    
+    
+}
+
+#plant-description-list{
+    position: relative;
+    right: 39px;
+}
+
+#growth-requirements-list li + li::before{
+    content: "\2022";  
+    color: #A2CCFA; 
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    padding-right: 30px;
+    font-weight: bold; 
+    display: inline-block; 
+    padding-left: 20px;
+    
+}
+
+#growth-requirements-list{
+    position: relative;
+    right: 39px;
+}
+
+#growth-requirements-list li{
+    display: inline;
+}
+
+.info-header{
+    color: #A2CCFA;
+}
+
+.bottom-border{
+    border-bottom: 2px solid #A2CCFA;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #A2CCFA;
+    font-size: .75rem;
+    padding: 0 10px;
+}
+
+footer p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-icon{
+    width: 20px;
+    height: auto;
+    align-self: center;
+}
+
+#plantlist-library{
+    display: inline-flex;
+}
+
+#plantlist-library p{
+    padding-left: 5px;
+}
+
+#footer-option{
+    display: inline-flex;
+}
+
+#footer-option p{
+    padding-right: 20px;
+}
+
+#footer-option img{
+    width: 30px;
+}
+
+
+#tutorial-menu{
+    display: inline-flex;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1295px) {
+    body{
+        width: 100%;
+    }
+
+    .nav-link{
+        position: relative;
+        left: 20px;
+        bottom: 30px;
+        padding: 0;
+        margin-right: 20px;
+    }
+    nav{
+        width: 55%
+    }
+
+    #selected-plant{
+        position: relative;
+        left: 1em;
+    }
+
+    #toggle-category{
+        right: 1em;
+    }
+
+    #header h4{
+        font-size: .85rem;
+    }
+
+    .nav-link{
+        top: 10px;
+    }
+    #user, button{
+        right: 5px;
+    }
+
+    #preview-images{
+        width: 90%;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1044px){
+    header{
+        height: 140px;
+    }
+
+     nav{
+        width: 100%;
+        top: 70px;
+        width: 100%;
+        right: 5px;
+    } 
+
+    .nav-link{
+        
+        margin-left: 10px;
+        font-size: 1.5rem;
+        padding: 0 30px;
+        position: relative;
+    }
+    #header h4{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 852px){
+   
+    .nav-link{
+        left: 1em;
+        padding: 0 5px;
+    }
+    #preview-images{
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 705px){
+    #header h4{
+        font-size: .95rem;
+    }
+}
+
+@media only screen and (max-width: 700px){
+ #plant-and-map-container{
+    display: grid;
+    grid-template-areas: "image"
+                         "preview"
+                         "map";
+    grid-template-rows: 425px 90px minmax(425px, 90px);
+    grid-template-columns: 100%;
+    height: 615px;
+    position: relative;
+    bottom: 3.5em;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 340px;
+} 
+
+#scroll-showcase-backward{
+    top: 11em;
+}
+
+#scroll-showcase-forward{
+    top: 11em;
+}
+
+nav{
+        
+    right: 10px;
+} 
+
+
+
+}
+
+@media only screen and (max-width: 680px){
+    #header h4{
+        font-size: .85rem;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 657px){
+    
+    .nav-link{
+        
+        margin-left: 0;
+        padding: 0 10px;
+        position: relative;
+       
+    }
+
+    nav{
+        
+        right: 15px;
+    } 
+
+    #toggle-category{
+        justify-content: flex-start;
+        bottom: 3.4em;
+        left: 1em;
+        padding-top: 30px;
+    }
+    
+    footer p{
+        font-size: .6rem;
+    }
+
+    #toggle-category img{
+        padding: 0 .2em 0 2em;
+    }
+    #preview-images{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 485px){
+    #selected-plant h2{
+        font-size: 1.3rem;
+    }
+    #header h4{
+        font-size: .7rem;
+        padding: 0;
+    }
+
+#user-id{
+    display: none;
+}
+
+#user-icon{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 18px;
+
+}
+#header button{
+    right: 0px;
+}
+
+
+}
+
+@media only screen and (max-width: 427px){
+    #selected-plant h2{
+        font-size: 1.1rem;
+    }
+    #preview-images{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 367px){
+    #header h4{
+        display: none;
+    }
+
+    #header nav{
+        position: relative;
+        top: 5em;
+        margin: auto;
+        left: .5em;
+    }
+    #header nav img{
+   width: 35px;
+   padding: 8px;
+    }
+
+    #selected-plant h2{
+        font-size: .9rem;
+        padding-bottom: .8em;
+    }
+
+}
+
