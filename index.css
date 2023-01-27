@@ -273,7 +273,7 @@ nav{
     width: 93%;
     height: 100%;
     margin: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
     border: 2px solid #A2CCFA;
     border-radius: 5px;
 }
@@ -286,7 +286,6 @@ nav{
     box-sizing: border-box;
     position: relative;
     top: 2px;
-    overflow: hidden;
 }
 
 
