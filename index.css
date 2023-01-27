@@ -190,14 +190,15 @@ nav{
     position: relative;
     object-fit: contain;
     overflow: auto;
-    border: 2px solid #A2CCFA;
-    border-radius: 5px;
+    /* border: 2px solid #A2CCFA; */
+    /* border-radius: 5px; */
     animation: fadeIn 2s; 
     overflow: hidden;
       
 }
 
 #main-plant-image img{
+    border-radius: 5px;
     object-fit: contain;
     max-width: 100%;
     height: auto;
@@ -207,14 +208,14 @@ nav{
 
 #plant-copyright{
     position: absolute;
-    bottom: 0px;
+    bottom: 2px;
     display: flex;
     justify-content: space-between;
     z-index: 1;
-    font-size: 12px;
-    background-color: rgba(128,128,128,.5);
+    font-size: 11px;
+    background-color: rgba(0,0,0,.5);
     width: 97.5%;
-    height: 30px;
+    height: 18px;
     padding-top: 0;
     overflow: hidden;
 }
@@ -228,7 +229,7 @@ nav{
     padding: 0 20px;
     color: #e9e0c9;
     position: relative;
-    bottom: 5px;
+    bottom: 10px;
     
 }
 
