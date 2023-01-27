@@ -200,6 +200,7 @@ nav{
     object-fit: contain;
     max-width: 100%;
     height: auto;
+    overflow: hidden;
     
 }
 
@@ -235,6 +236,7 @@ nav{
     width: 50px;
     top: 14em;
     cursor: pointer;
+    overflow: hidden;
 }
 
 #scroll-showcase-backward{
@@ -243,6 +245,7 @@ nav{
     top: 14em;
     width: 50px;
     cursor: pointer;
+    overflow: hidden;
 }
 
 #scroll-showcase-forward:hover, #scroll-showcase-backward:hover{
