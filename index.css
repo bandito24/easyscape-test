@@ -265,6 +265,7 @@ nav{
 #preview{
     grid-area: preview;
     position: relative;
+    bottom: 4px;
     
 }
 
@@ -276,6 +277,7 @@ nav{
     overflow: hidden;
     border: 2px solid #A2CCFA;
     border-radius: 5px;
+
 }
 
 #preview-images img{
