@@ -273,7 +273,7 @@ nav{
 #preview-images img{
     height: 86px; 
    max-width: 120px; 
-    overflow: auto;
+    /* overflow: auto; */
     /* object-fit: contain; */
     box-sizing: border-box;
     position: relative;
