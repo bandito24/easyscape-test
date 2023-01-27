@@ -173,6 +173,7 @@ nav{
     row-gap: 10px;
     margin: auto;
     justify-content: center;
+    overflow: hidden;
     /* padding-bottom: 75% */
 }
 
@@ -184,7 +185,6 @@ nav{
     display: flex; 
     justify-content: center; 
     width: auto;
-    overflow: hidden;
     margin-bottom: 5px;
     margin-right: 5px;
     position: relative;
@@ -193,6 +193,7 @@ nav{
     border: 2px solid #A2CCFA;
     border-radius: 5px;
     animation: fadeIn 2s; 
+    overflow: hidden;
       
 }
 
@@ -228,7 +229,7 @@ nav{
     color: #e9e0c9;
     position: relative;
     bottom: 5px;
-    overflow: hidden;
+    
 }
 
 
@@ -238,7 +239,7 @@ nav{
     width: 50px;
     top: 14em;
     cursor: pointer;
-    overflow: hidden;
+    
 }
 
 #scroll-showcase-backward{
@@ -247,13 +248,13 @@ nav{
     top: 14em;
     width: 50px;
     cursor: pointer;
-    overflow: hidden;
+   
 }
 
 #scroll-showcase-forward:hover, #scroll-showcase-backward:hover{
     transform: scale(1.3);
     transition: transform 100ms linear;
-    overflow: hidden;
+    
 }
 
 
