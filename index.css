@@ -12,6 +12,10 @@ header{
     height: 60px;
 }
 
+#mobile-header{
+    display: none;
+}
+
 
 
 
@@ -132,10 +136,10 @@ nav{
 
 
 
-#add-plant-icon:hover{
+/* #add-plant-icon:hover{
     transform: scale(1.3);
     transition: transform 100ms linear;
-}
+} */
 
 
 #scientific-name{
@@ -175,6 +179,10 @@ nav{
     justify-content: center;
     overflow: hidden;
     /* padding-bottom: 75% */
+}
+
+#plant-and-map-container-two{
+    display: none;
 }
 
 /* Showcase Image */
@@ -265,7 +273,7 @@ nav{
 #preview{
     grid-area: preview;
     position: relative;
-    bottom: 4px;
+    
     
 }
 
@@ -275,7 +283,7 @@ nav{
     height: 100%;
     margin: auto;
     overflow: hidden;
-    border: 2px solid #A2CCFA;
+    /* border: 2px solid #A2CCFA; */
     border-radius: 5px;
 
 }
@@ -286,8 +294,7 @@ nav{
     /* overflow: auto; */
     /* object-fit: contain; */
     box-sizing: border-box;
-    position: relative;
-    top: 2px;
+    
 }
 
 
@@ -337,8 +344,23 @@ preview-images .plant-photos{
 #plant-info{
     width: 95%;
     margin: auto;
-    margin-bottom: 4em;
+    position: relative;
 
+}
+
+.info-block{
+    position: relative;
+    bottom: 3em;
+}
+
+.info-header{
+    position: relative;
+    top: 1em;
+}
+
+#growth-requirements .info-header, #plant-description .info-header{
+    position: relative;
+    top: 1.7em;
 }
 
 /* #plant-info p{
@@ -351,6 +373,11 @@ preview-images .plant-photos{
 
 .bold{
     font-weight: 700;
+}
+
+#plant-description{
+    position: relative;
+    bottom: 5em;
 }
 
 #plant-description-list li + li::before{
@@ -375,7 +402,17 @@ preview-images .plant-photos{
 #plant-description-list{
     position: relative;
     right: 39px;
+    line-height: .9;
+    
 }
+
+#growth-requirements{
+    line-height: 1.25;
+    position: relative;
+    bottom: 7em;
+}
+
+
 
 #growth-requirements-list li + li::before{
     content: "\2022";  
@@ -399,6 +436,16 @@ preview-images .plant-photos{
     display: inline;
 }
 
+#natural-habitat{
+    position: relative;
+    bottom: 8.5em;
+}
+
+#other-names{
+    position: relative;
+    bottom: 10em;
+}
+
 .info-header{
     color: #A2CCFA;
 }
@@ -406,6 +453,8 @@ preview-images .plant-photos{
 .bottom-border{
     border-bottom: 2px solid #A2CCFA;
 }
+
+
 
 /* Footer */
 footer{
@@ -542,12 +591,17 @@ footer p:hover{
 }
 
 @media only screen and (max-width: 700px){
- #plant-and-map-container{
+    #plant-and-map-container{
+        display: none;
+    }
+
+
+ #plant-and-map-container-two{
     display: grid;
     grid-template-areas: "image"
                          "preview"
                          "map";
-    grid-template-rows: 425px 90px minmax(425px, 90px);
+    grid-template-rows: 425px 90px 425px;
     grid-template-columns: 100%;
     height: 615px;
     position: relative;
@@ -565,27 +619,140 @@ footer p:hover{
     top: 11em;
 }
 
-nav{
-        
-    right: 10px;
-} 
-
-
-
+header{
+    display: none;
 }
 
-@media only screen and (max-width: 680px){
-    #header h4{
-        font-size: .85rem;
-    }
+#mobile-container{
+    width: 100%;
+    border-bottom: solid 5px #A2CCFA;
+}
 
+#mobile-header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    width: 90%;
+    margin: auto;
+    
     
 }
+#mobile-header img{
+    align-self: center;
+}
+
+#mobile-logo{
+    width: 200px;
+    height: auto;
+}
+
+.mobile-icon{
+    width: 27px;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.mobile-icon:hover{
+    background-color: #EDF5FE;
+    transition: background-color ease-out 300ms;
+    cursor: pointer;
+}
+
+.mobile-icon:active{
+    background-color: #EDF5FE;
+    
+}
+
+#menu-dropdown{
+    display: none;
+    position: absolute;
+    top: 4em;
+    left: 3em;
+    z-index: 1;
+    background-color: whitesmoke;
+    font-size: .8rem;
+    padding: 0 10px;
+    border-radius: 10px;
+    align-content: center;
+    width: 100px;
+    animation: dropDown 200ms ease-in
+    
+}
+
+
+@keyframes dropDown{
+ 
+    0%{
+        opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+
+}
+
+.dropdown-option{
+    border-bottom: #A2CCFA 2px solid;
+    font-size: .8rem;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.dropdown-option:hover{
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.dropdown-option:active{
+    font-weight: bold;
+}
+
+
+#preview-images{
+    width: 100%;
+}
+
+#add-plant-icon{
+    display: none;;
+}
+
+#selected-plant h2{
+    position: relative;
+    bottom: .7em;
+}
+
+#toggle-category h3{
+    display: none;
+}
+
+#toggle-category{
+    position: relative;
+    bottom: 4.2em;
+}
+
+.scroll{
+    display: none;
+}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 680px){
+    }
 
 
 @media only screen and (max-width: 657px){
     
-    .nav-link{
+    /* .nav-link{
         
         margin-left: 0;
         padding: 0 10px;
@@ -596,38 +763,77 @@ nav{
     nav{
         
         right: 15px;
-    } 
+    }  */
 
-    #toggle-category{
+    /* #toggle-category{
         justify-content: flex-start;
         bottom: 3.4em;
         left: 1em;
         padding-top: 30px;
-    }
+    } */
     
     footer p{
         font-size: .6rem;
     }
 
-    #toggle-category img{
+    /* #toggle-category img{
         padding: 0 .2em 0 2em;
+    } */
+   
+
+
+
+}
+
+
+@media only screen and (max-width: 560px){
+
+    #selected-plant h2{
+        font-size: 1.3rem;
     }
-    #preview-images{
-        width: 90%;
+
+    #toggle-category{
+        
+        bottom: 3.8em;
     }
+    
+
+}
+
+@media only screen and (max-width: 510px){
+
+    #selected-plant h2{
+        font-size: 1.2rem;
+        padding-bottom: 5px;
+    }
+
+    #toggle-category{
+        
+        bottom: 3.8em;
+    }
+    
+
+}
+
+@media only screen and (max-width: 460px){
+
+    #selected-plant h2{
+        font-size: 1.1rem;
+        padding-bottom: 10px;
+    }
+
+    #toggle-category{
+        
+        bottom: 3.8em;
+    }
+    
 
 }
 
 @media only screen and (max-width: 485px){
-    #selected-plant h2{
-        font-size: 1.3rem;
-    }
-    #header h4{
-        font-size: .7rem;
-        padding: 0;
-    }
-
-#user-id{
+   
+  
+/* #user-id{
     display: none;
 }
 
@@ -640,23 +846,65 @@ nav{
 }
 #header button{
     right: 17px;
-}
+} */
 
 
 }
 
 @media only screen and (max-width: 427px){
-    #selected-plant h2{
+    
+
+    /* #selected-plant h2{
         font-size: 1.1rem;
+    } */
+    #selected-plant h2{
+        font-size: 1rem;
+        bottom: 7px;
+        padding-bottom: 15px;
     }
-    #preview-images{
-        width: 80%;
+
+    #toggle-category{
+        
+        bottom: 3.8em;
     }
+ 
+
+}
+
+@media only screen and (max-width: 399px){
+    
+
+    /* #selected-plant h2{
+        font-size: 1.1rem;
+    } */
+    #selected-plant h2{
+        font-size: .9rem;
+        bottom: 7px;
+        padding-bottom: 20px;
+    }
+
+    #toggle-category{
+        
+        bottom: 3.9em;
+    }
+ 
 
 }
 
 @media only screen and (max-width: 367px){
-    #header h4{
+
+
+    #selected-plant h2{
+        font-size: .8rem;
+        bottom: 3px;
+        padding-bottom: 25px;
+    }
+
+    #toggle-category{
+        
+        bottom: 3.9em;
+    }
+    /* #header h4{
         display: none;
     }
 
@@ -669,12 +917,13 @@ nav{
     #header nav img{
    width: 35px;
    padding: 8px;
-    }
+    } */
+   
 
-    #selected-plant h2{
+    /* #selected-plant h2{
         font-size: .9rem;
         padding-bottom: .8em;
-    }
+    } */
 
 }
 

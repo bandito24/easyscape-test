@@ -33,12 +33,26 @@
             <button id="sign-out">Sign Out</button>
         </div>
     </header>
+    <div id="mobile-container">
+        <div id="mobile-header">
+            <img class="mobile-icon" id='clickable-menu' src="./icons/mobile-menu.png" alt="Menu">
+                <div id="menu-dropdown">
+                    <p class="dropdown-option">Add Plant</p>
+                    <a href="https://easyscape.com/demo/design_mapbox.php" ><p class="dropdown-option">Design Garden</p></a>
+                   <a href="https://easyscape.com/demo/"> <p class="dropdown-option">Browse Plants</p></a>
+                  <p class="dropdown-option">Account</p>
+                    <p class="dropdown-option">Sign Out</p>
+                </div>
+            <img id='mobile-logo' src="./icons/easyscape-earth-logo.png" alt="Easyscape Logo">
+            <a href="https://easyscape.com/demo/search_query.php" ><img class="mobile-icon" src="./icons/nav-search-logo.png" alt="Search Icon"></a>
+        </div>
+    </div>
 
     <main>
         <div id="top-row-main">
             <div id="selected-plant">
                 <h2 id="common-name">Western Juniper</h2>
-                <h2 id="scientific-name">(Juniper communis)</h2>
+                <h2 id="scientific-name">(Juniper communis)</h2>              
                 <img src="./icons/add-icon.png" class="icon" id='add-plant-icon' alt="Add Plant Icon">
             </div>
             <div id="toggle-category">
@@ -47,6 +61,8 @@
                 <img src="./icons/next.png" class="icon" alt="Next Plant">         
             </div>
         </div>
+
+        
         <div id="plant-and-map-container">
             <div id="main-plant-image">
                 <img id='showcase-plant' src="./easyscape-test-photos/test-portrait.jpg" alt="">
@@ -83,6 +99,46 @@
                 <img src="./easyscape-test-photos/map.jpeg" alt="">
             </div>
         </div>
+
+
+        <div id="plant-and-map-container-two">
+            <div id="main-plant-image">
+                <img id='showcase-plant' src="./easyscape-test-photos/test-portrait.jpg" alt="">
+                <div id="scroll-showcase">
+                    <img id="scroll-showcase-forward" src="./icons/scroll-showcase-forward.png" alt="scroll forward">
+                    <img id="scroll-showcase-backward" src="./icons/scroll-showcase-backward.png" alt="scroll backward">
+                </div>
+                <div id="plant-copyright">
+                    <p>Dick Van Dyke</p>
+                    <p>CC BY-SA</p>
+                </div>
+            </div>
+            <div id="preview">
+                <div id="preview-images"> 
+                    <img class='plant-photo' src="./easyscape-test-photos/test-portrait.jpg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/test-landscape.jpg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/main.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/1.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/2.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/3.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/4.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/7.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/8.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/9.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/10.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/11.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/12.jpeg" alt="">
+                    <img class='plant-photo' src="./easyscape-test-photos/13.jpeg" alt="">
+                    <img src="./icons/scroll-forward.png" alt="scroll forward" id="scroll-forward" class="scroll"> 
+                    <img src="./icons/scroll-backward.png" alt="scroll backward" id="scroll-backward" class="scroll">
+                </div>      
+            </div>
+            <div id="map">
+                <img src="./easyscape-test-photos/map.jpeg" alt="">
+            </div>
+        </div>
+
+
 
         <div id="plant-info">
             <div id="summary" class="info-block bottom-border" >

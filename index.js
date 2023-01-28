@@ -48,20 +48,20 @@ highlightThumbnail()
 //FOR SCROLLING THROUGH PLANTS ON THE SHOWCASE TOGGLE ARROWS
 
 // const plantImageUrls = [
-//     "/easyscape-test-photos/test-portrait.jpg",
-//     "./easyscape-test-photos/test-landscape.jpg",
-//     "./easyscape-test-photos/main.jpeg",
-//     "./easyscape-test-photos/1.jpeg",
-//     "./easyscape-test-photos/2.jpeg",
-//     "./easyscape-test-photos/3.jpeg",
-//     "./easyscape-test-photos/4.jpeg",
-//     "./easyscape-test-photos/7.jpeg",
-//     "./easyscape-test-photos/8.jpeg",
-//     "./easyscape-test-photos/9.jpeg",
-//     "./easyscape-test-photos/10.jpeg",
-//     "./easyscape-test-photos/11.jpeg",
-//     "./easyscape-test-photos/12.jpeg",
-//     "./easyscape-test-photos/13.jpeg"
+//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/test-portrait.jpg",
+//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/test-landscape.jpg",
+//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/main.jpeg",
+//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/1.jpeg",
+//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/2.jpeg",
+//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/3.jpeg",
+//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/4.jpeg",
+//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/7.jpeg",
+//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/8.jpeg",
+//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/9.jpeg",
+//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/10.jpeg",
+//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/11.jpeg",
+//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/12.jpeg",
+//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/13.jpeg"
 // ]
 const plantImageUrls = [
     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/test-portrait.jpg",
@@ -80,15 +80,15 @@ const plantImageUrls = [
     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/13.jpeg"
 ]
 
-
 const showcaseForward = document.getElementById('scroll-showcase-forward')
 const showcaseBackward = document.getElementById('scroll-showcase-backward')
+
 
 
 function nextShowcase(){
     let i = plantImageUrls.indexOf(showcasePlant.src)
     if(showcasePlant.src !== plantImageUrls[plantImageUrls.length - 1]){
-    showcasePlant.src = plantImageUrls[(i + 1)]
+    showcasePlant.src = plantImageUrls[i + 1]
     }
     document.getElementById('preview-images').scrollLeft += 110;
 }
@@ -108,3 +108,20 @@ showcaseForward.addEventListener('click', nextShowcase)
 showcaseForward.addEventListener('click', highlightThumbnail)
 showcaseBackward.addEventListener('click', previousShowcase)
 showcaseBackward.addEventListener('click', highlightThumbnail)
+
+
+const dropDown = document.getElementById('menu-dropdown')
+const clickableMenu = document.getElementById('clickable-menu')
+
+function showMenu(){
+    var display = getComputedStyle(dropDown).display;
+
+     if (display == "none") {
+             dropDown.style.display = "block";
+         } else {
+            dropDown.style.display = "none";
+         }
+}
+
+clickableMenu.addEventListener('click', showMenu)
+
