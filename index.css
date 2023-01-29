@@ -714,7 +714,8 @@ a{
 
 #preview-images{
     width: 100%;
-    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
