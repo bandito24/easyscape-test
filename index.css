@@ -356,14 +356,18 @@ preview-images .plant-photos{
 
 .info-header{
     margin-bottom: -.5em;
+    margin-top: .1em;
+    padding-bottom: 10px;
 }
 
 #plant-description .info-header{
     margin-bottom: -1.5em;
+    padding-bottom: 10px;
 }
 
 #growth-requirements .info-header{
     margin-bottom: -1.8em;
+    padding-bottom: 17px;
 }
 
 
@@ -391,6 +395,8 @@ preview-images .plant-photos{
 
 #plant-description-list li{
     display: inline;
+    width: 10px;
+    white-space: nowrap;
     
     
 }
@@ -403,7 +409,8 @@ preview-images .plant-photos{
 }
 
 #growth-requirements{
-    line-height: 1.25;
+    line-height: .9;
+    padding-top: 7px;
 }
 
 
@@ -428,6 +435,8 @@ preview-images .plant-photos{
 
 #growth-requirements-list li{
     display: inline;
+    white-space: nowrap;
+    
 }
 
 
@@ -1001,6 +1010,9 @@ max-height: 90px;
     }
     #mobile-logo{
         width: 150px;
+    }
+    #growth-requirements .info-header{
+        padding-bottom: 25px;
     }
     #footer-option p{
         padding-right: 15px;
