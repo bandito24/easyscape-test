@@ -876,6 +876,14 @@ max-height: 90px;
 
 }
 
+
+@media only screen and (max-width: 526px){
+
+
+}
+
+
+
 @media only screen and (max-width: 510px){
 
     #selected-plant h2{
@@ -890,6 +898,24 @@ max-height: 90px;
 
     #scroll-showcase-backward, #scroll-showcase-forward{
         top: 9em;
+    }
+    footer{
+        justify-content: center;
+        font-size: .75rem;
+        padding: 0 10px;
+        flex-wrap: wrap;
+        padding: 0 5px;
+        
+    }
+    #footer-option p{
+        padding-right: 20px;
+    }
+    
+    #plantlist-library{
+        font-size: .85rem;
+        margin: 0 20px;
+        clear: right;
+        padding: 10px 0;
     }
     
 
@@ -975,6 +1001,14 @@ max-height: 90px;
     }
     #mobile-logo{
         width: 150px;
+    }
+    #footer-option p{
+        padding-right: 15px;
+    }
+
+    footer{
+        padding: 0;
+        padding-left: 15px;
     }
    
 
