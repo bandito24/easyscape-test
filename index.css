@@ -1,7 +1,8 @@
 #container{
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     overflow-x: hidden;
+    
 }
 
 body{
