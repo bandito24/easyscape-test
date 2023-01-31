@@ -4,11 +4,13 @@ const scrollForward = document.getElementById('scroll-forward')
 const scrollBackward = document.getElementById('scroll-backward')
 
 function forwardPlants(){
-    document.getElementById('preview-images').scrollLeft += 100;
+    // document.getElementById('preview-images').scrollLeft += 100;
+    document.getElementById('preview-images').scrollLeft += 620;
 }
 
 function backwardPlants(){
-    document.getElementById('preview-images').scrollLeft -= 100;
+    // document.getElementById('preview-images').scrollLeft -= 100;
+    document.getElementById('preview-images').scrollLeft -= 620;
 }
 
 scrollForward.addEventListener('click', forwardPlants)
@@ -47,38 +49,38 @@ highlightThumbnail()
 
 //FOR SCROLLING THROUGH PLANTS ON THE SHOWCASE TOGGLE ARROWS
 
-// const plantImageUrls = [
-//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/test-portrait.jpg",
-//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/test-landscape.jpg",
-//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/main.jpeg",
-//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/1.jpeg",
-//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/2.jpeg",
-//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/3.jpeg",
-//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/4.jpeg",
-//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/7.jpeg",
-//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/8.jpeg",
-//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/9.jpeg",
-//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/10.jpeg",
-//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/11.jpeg",
-//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/12.jpeg",
-//     "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/13.jpeg"
-// ]
 const plantImageUrls = [
-    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/test-portrait.jpg",
-    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/test-landscape.jpg",
-    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/main.jpeg",
-    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/1.jpeg",
-    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/2.jpeg",
-    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/3.jpeg",
-    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/4.jpeg",
-    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/7.jpeg",
-    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/8.jpeg",
-    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/9.jpeg",
-    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/10.jpeg",
-    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/11.jpeg",
-    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/12.jpeg",
-    "https://bandito24.github.io/easyscape-test/easyscape-test-photos/13.jpeg"
+    "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/test-portrait.jpg",
+    "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/test-landscape.jpg",
+    "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/main.jpeg",
+    "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/1.jpeg",
+    "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/2.jpeg",
+    "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/3.jpeg",
+    "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/4.jpeg",
+    "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/7.jpeg",
+    "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/8.jpeg",
+    "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/9.jpeg",
+    "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/10.jpeg",
+    "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/11.jpeg",
+    "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/12.jpeg",
+    "file:///Users/charlie/Desktop/coding/easyscape-test/easyscape-test-photos/13.jpeg"
 ]
+// const plantImageUrls = [
+//     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/test-portrait.jpg",
+//     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/test-landscape.jpg",
+//     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/main.jpeg",
+//     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/1.jpeg",
+//     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/2.jpeg",
+//     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/3.jpeg",
+//     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/4.jpeg",
+//     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/7.jpeg",
+//     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/8.jpeg",
+//     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/9.jpeg",
+//     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/10.jpeg",
+//     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/11.jpeg",
+//     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/12.jpeg",
+//     "https://bandito24.github.io/easyscape-test/easyscape-test-photos/13.jpeg"
+// ]
 
 const showcaseForward = document.getElementById('scroll-showcase-forward')
 const showcaseBackward = document.getElementById('scroll-showcase-backward')
@@ -124,4 +126,3 @@ function showMenu(){
 }
 
 clickableMenu.addEventListener('click', showMenu)
-
