@@ -1,6 +1,6 @@
 #container{
     height: 100vh;
-    overflow: auto;
+    overflow: hidden;
 }
 
 body{
@@ -139,7 +139,7 @@ nav{
 #selected-plant{
     display: flex;
     position: relative;
-    left: 5px;
+    left: 10px;
 }
 
 #selected-plant img{
@@ -825,6 +825,7 @@ max-height: 90px;
 #preview-images::-webkit-scrollbar{
     display: none;
 }
+
 
 #add-plant-icon{
     display: none;;
