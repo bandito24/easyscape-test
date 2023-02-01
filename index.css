@@ -374,6 +374,13 @@ preview-images .plant-photos{
     margin-bottom: -1.7em;
     padding-bottom: 10px;
 }
+#plant-description ul{
+    width: 100%;
+}
+
+#growth-requirements ul{
+    width: 100%;
+}
 
 #growth-requirements .info-header{
     margin-bottom: -1.8em;
