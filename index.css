@@ -11,9 +11,7 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    height: auto;
-    margin: 0;
-    
+    height: auto;    
 }
 
 
@@ -316,19 +314,6 @@ preview-images .plant-photos{
     box-sizing: border-box;
 }
 
-/* #preview #scroll-backward{
-    position: absolute;
-    left: 0px;
-    width: 20px; 
-    object-fit: contain;
-}
-
-#preview #scroll-forward{
-    position: absolute;
-    right: 0px;
-    width: 20px; 
-    object-fit: contain;
-} */
 #preview #scroll-backward{
     position: absolute;
     left: 6px;
@@ -371,21 +356,22 @@ preview-images .plant-photos{
 
 
 #plant-info{
-    width: 95%;
+    width: 98%;
     margin: auto;
     position: relative;
     bottom: 3em;
+    padding-top: 1em;
 }
 
 
 .info-header{
-    margin-bottom: -.5em;
+    margin-bottom: -1.2em;
     margin-top: .1em;
     padding-bottom: 10px;
 }
 
 #plant-description .info-header{
-    margin-bottom: -1.5em;
+    margin-bottom: -1.7em;
     padding-bottom: 10px;
 }
 
@@ -404,44 +390,69 @@ preview-images .plant-photos{
 }
 
 
-#plant-description-list li + li::before{
+#plant-description-list li:not(:last-child)::after{
     content: "\2022";  
     color: #A2CCFA; 
     font-size: 30px;
     position: relative;
     top: 5px;
-    padding-right: 10px;
     font-weight: bold; 
     display: inline-block; 
-    padding-left: 10px;
-    
+    padding-left: 8px;
+    padding-right: 5px;
+}
+
+#plant-description-list li:last-child::after{
+    content: "\2022";  
+    color: #A2CCFA; 
+    opacity: 0;
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    font-weight: bold; 
+    display: inline-block; 
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #plant-description-list li{
     display: inline;
     width: 10px;
     white-space: nowrap;
-    
-    
+    padding-top: 40px;
 }
+
 
 #plant-description-list{
     position: relative;
     right: 39px;
-    line-height: .9;
+    line-height: .65;
     
 }
 
 #growth-requirements{
-    line-height: .9;
+    line-height: .65;
     padding-top: 7px;
 }
 
 
-
-#growth-requirements-list li + li::before{
+#growth-requirements-list li:not(:last-child)::after{
     content: "\2022";  
     color: #A2CCFA; 
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    font-weight: bold; 
+    display: inline-block; 
+    padding-left: 8px;
+    padding-right: 5px;
+    
+}
+
+#growth-requirements-list li:last-child::after{
+    content: "\2022";  
+    color: #A2CCFA; 
+    opacity: 0;
     font-size: 30px;
     position: relative;
     top: 5px;
@@ -449,7 +460,6 @@ preview-images .plant-photos{
     font-weight: bold; 
     display: inline-block; 
     padding-left: 10px;
-    
 }
 
 #growth-requirements-list{
@@ -474,8 +484,8 @@ preview-images .plant-photos{
 }
 
 
-
 /* Footer */
+
 
 footer{
     display: flex;
@@ -483,8 +493,10 @@ footer{
     background-color: #A2CCFA;
     font-size: .75rem;
     padding: 0 10px;
-    margin-top: 4em;
-   
+    position: relative;
+    top: 7em;
+    margin-bottom: -20em;
+
 }
 
 footer p:hover{
@@ -1027,11 +1039,6 @@ max-height: 90px;
 
 }
 
-@media only screen and (max-width: 373px){
-    #growth-requirements .info-header{
-        padding-bottom: 30px;
-    }
-}
 
 @media only screen and (max-width: 367px){
 
@@ -1062,9 +1069,6 @@ max-height: 90px;
 
 @media only screen and (max-width: 331px){
 
-    #plant-description .info-header{
-        padding-bottom: 20px;
-    }
     footer p{
         font-size: .6rem;
     }

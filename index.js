@@ -2,15 +2,32 @@
 
 const scrollForward = document.getElementById('scroll-forward')
 const scrollBackward = document.getElementById('scroll-backward')
+let previewImages = document.getElementById('preview-images')
+
+
+function checkIfScrollNeeded(){
+let maxScroll = previewImages.scrollWidth - previewImages.offsetWidth
+
+if(previewImages.scrollLeft === 0){
+    scrollBackward.style.display = 'none'
+} else if(previewImages.scrollLeft >= maxScroll - 1){
+    scrollForward.style.display = 'none'
+} else {
+    scrollBackward.style.display = 'block' 
+    scrollForward.style.display = 'block'
+}
+}
+
+checkIfScrollNeeded()
 
 function forwardPlants(){
-    // document.getElementById('preview-images').scrollLeft += 100;
-    document.getElementById('preview-images').scrollLeft += 620;
+    previewImages.scrollLeft += 620;
+    checkIfScrollNeeded()
 }
 
 function backwardPlants(){
-    // document.getElementById('preview-images').scrollLeft -= 100;
-    document.getElementById('preview-images').scrollLeft -= 620;
+    previewImages.scrollLeft -= 620;
+    checkIfScrollNeeded()
 }
 
 scrollForward.addEventListener('click', forwardPlants)
