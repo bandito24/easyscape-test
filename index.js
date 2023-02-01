@@ -112,8 +112,6 @@ function nextShowcase(){
     document.getElementById('preview-images').scrollLeft += 110;
 }
 
-console.log(showcasePlant.src)
-    console.log(plantImageUrls[0])
 
 function previousShowcase(){
     let i = plantImageUrls.indexOf(showcasePlant.src)
@@ -129,6 +127,8 @@ showcaseBackward.addEventListener('click', previousShowcase)
 showcaseBackward.addEventListener('click', highlightThumbnail)
 
 
+//DROPDOWN MENU ON MOBILE WIDTH (<700PX)
+
 const dropDown = document.getElementById('menu-dropdown')
 const clickableMenu = document.getElementById('clickable-menu')
 
@@ -143,7 +143,7 @@ function showMenu(){
 }
 
 function hideMenu(event){
-    if (!dropDown.contains(event.target)) {
+    if (!dropDown.contains(event.target) && (!clickableMenu.contains(event.target))) {
     dropDown.style.display = "none"
     }
 }
